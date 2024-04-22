@@ -1,0 +1,8 @@
+# Ignora archivos del sistema Mac 
+.DS_store
+
+# Ignora la carpeta __pycache__ de python
+__pycache__
+
+# Ignora los archivos relacionados a API keys
+.pytest_cache
