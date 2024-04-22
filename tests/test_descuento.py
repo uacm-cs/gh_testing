@@ -3,7 +3,8 @@ import pytest
 
 @pytest.mark.parametrize("precio, tasa_descuento, valor_esperado",
                          [(100, 0.5, 50),
-                          (50, 0.5, 25)] )
+                          (50, 0.5, 25), 
+                          (60, 0.5, 30)] )
 def test_descuento_ok(precio, tasa_descuento, valor_esperado):
     precio_final  = calcular_descuento(precio, tasa_descuento)
     assert precio_final == valor_esperado
