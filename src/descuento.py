@@ -4,7 +4,7 @@ def calcular_descuento(precio, tasa_descuento):
     if tasa_descuento < 0 or tasa_descuento > 1:
         raise ValueError("La tasa de descuento debe estar entre 0 y 1.")
     descuento = precio * tasa_descuento
-    precio_final = precio - descuento
+    precio_final = precio + descuento
     return precio_final 
 
 
